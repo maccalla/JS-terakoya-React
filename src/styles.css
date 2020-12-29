@@ -2,3 +2,39 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+*::selection {
+  background: none;
+  color: #000;
+  text-shadow: none;
+}
+
+.title {
+  color: transparent;
+  text-shadow: 0 0 8px #000;
+  font-weight: normal;
+  transition: all 2s ease;
+}
+
+.text,
+.text2 {
+  text-align: left;
+  width: 600px;
+  padding: 0 0 10px;
+  margin: 0 auto;
+  color: transparent;
+  text-shadow: 0 0 8px #000;
+  transition: all 2s ease;
+}
+
+.text:hover {
+  transform: skew(3deg, 3deg);
+}
+
+.text2:hover {
+  transform: skew(-3deg, -3deg);
+}
+
+.title:hover {
+  transform: skew(3deg, 3deg);
+}
